@@ -37,4 +37,15 @@ describe Bookmark do
     end
   end
 
+  describe '.delete' do
+    it 'deletes a bookmark' do
+      clear_database
+      bookmark = Bookmark.create( url: "http://www.testbookmark.com", title: "test bookmark" )
+      Bookmark.delete( id: bookmark.id )
+      bookmarks = Bookmark.all
+
+      expect(bookmarks).to be_empty
+    end
+  end
+
 end

@@ -10,6 +10,14 @@ As a User
 So I can keep track of interesting stuff  
 I want to be able to see a list of bookmarks  
 
+As a User  
+So I can add a bookmark for an interesting site  
+I want to be able to add that bookmark to my list   
+
+As a User  
+So I can remove a bookmark I no longer find interesting  
+I want to be able to delete that bookmark from my list  
+
 LIST | BOOKMARK
 ----- | --------
 -add_bookmark | -@url / -@name / -@description
